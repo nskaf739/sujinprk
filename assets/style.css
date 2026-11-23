@@ -424,6 +424,6 @@ main{z-index:3}footer{z-index:2}.stone{z-index:5}
 .news-item h3{color:var(--ink)}
 
 /* Handwritten greeting is "written" stroke by stroke when the home page opens */
-svg.hiya path{stroke-dasharray:1;stroke-dashoffset:1;animation:hiyaDraw var(--t) linear calc(var(--d) + .3s) both}
+svg.hiya path{stroke-dasharray:1;stroke-dashoffset:1;animation:hiyaDraw var(--t) linear calc(var(--d) + .2s) both}
 @keyframes hiyaDraw{0%{opacity:0}1%{opacity:1;stroke-dashoffset:1}100%{opacity:1;stroke-dashoffset:0}}
 @media(prefers-reduced-motion:reduce){svg.hiya path{animation:none;stroke-dashoffset:0;opacity:1}}

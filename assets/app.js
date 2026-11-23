@@ -159,6 +159,7 @@ function route(){
   else if(h==="shop"||h==="order"){orderPage();renderChips("shop")}
   else if(h==="thanks"){thanks();renderChips("")}
   else{home();renderChips("")}
+  document.title=({art:"Art | Sujin Park",shop:"Shop | Sujin Park",order:"Shop | Sujin Park",thanks:"Thank you | Sujin Park"})[h]||"Sujin Park";
   window.scrollTo(0,0);
   if(!first){app.classList.remove("flip");void app.offsetWidth;app.classList.add("flip")}
   first=false;
